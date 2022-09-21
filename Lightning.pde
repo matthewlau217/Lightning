@@ -19,6 +19,7 @@ void mousePressed(){
     startX = endX;
     startY = endY;
   }
+  fire(endX);
   noStroke();
   fill(#646364);
   ellipse(10,50,100,100);
@@ -36,11 +37,11 @@ void mousePressed(){
 
 void draw()
 {
-  background(#1139A5);
-  delay(50);
+  background(15,60,165,10);
+  delay(75);
   noStroke();
   for(int i = 0; i <= 500; i++) {
-    fill(#0FF9FF);
+    fill(15,250,255,i);
     ellipse((float)(Math.random() * 501), i, 3, 3);
   }
   fill(#646364);
@@ -56,3 +57,15 @@ void draw()
   ellipse(375,0,100,100);
   ellipse(390,50,50,50);
 } 
+
+void fire(int x){
+  noStroke();
+  fill(255,255,0);
+  triangle(x-25,500,x+25,500,x,420);
+  triangle(x-50,500,x-25,500,x-37.5,475);
+  triangle(x+25,500,x+50,500,x+37.5,475);
+  fill(#FF5703);
+  triangle(x-20,500,x+20,500,x,425);
+  triangle(x-45,500,x-30,500,x-37.5,485);
+  triangle(x+30,500,x+45,500,x+37.5,485);
+}
