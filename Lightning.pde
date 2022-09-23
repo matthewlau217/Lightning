@@ -38,7 +38,6 @@ void mousePressed(){
 void draw()
 {
   background(15,60,165,10);
-  delay(75);
   noStroke();
   for(int i = 0; i <= 500; i++) {
     fill(15,250,255,i);
