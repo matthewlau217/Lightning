@@ -10,7 +10,6 @@ void mousePressed(){
   int endX = (int)(Math.random() * 501);
   int endY = 0;
   //delay((int)(Math.random() * 1500));
-  g.stroke = true;
   stroke((float)((Math.random() * 150) + 100), (float)((Math.random() * 150) + 100), (float)((Math.random() * 150) + 100));
   while (startY < 500){
     endX = startX + (int)(Math.random() * 19)-9;
